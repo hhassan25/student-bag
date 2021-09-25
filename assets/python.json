@@ -1,0 +1,90 @@
+[
+    {
+        "1": "What will be the output of the following code?\na = \"p\" * 3 \nprint(a) ",
+        "2": "Which function finds out the variable type in python?",
+        "3": "which of the following keyword is used to define a function in python?",
+        "4": "Which of the following is a pring function in python?",
+        "5": "Which of the function finds out the variable in python?",
+        "6": "Which of the following keyword is used to define a function in python?",
+        "7": "Which function finds out the variable type in python?",
+        "8": "Which of the following keyword is used to define a function in python?",
+        "9": "Which function finds out the variable type in python?",
+        "10": "Which of the following keyword is used to define a function in python?"
+    },
+    {
+        "1":{
+            "a": "ppp",
+            "b": "pp",
+            "c": "3p",
+            "d": "p3"
+        },
+        "2":{
+            "a": "type",
+            "b": "find",
+            "c": "typeof",
+            "d": "typeon"
+        },
+        "3":{
+            "a": "func",
+            "b": "def",
+            "c": "void",
+            "d": "function"
+        },
+        "4":{
+            "a": "cout",
+            "b": "print",
+            "c": "println",
+            "d": "stderr"
+        },
+        "5":{
+            "a": "typedef",
+            "b": "type",
+            "c": "typeof",
+            "d": "find"
+        },
+        "6":{
+            "a": "func",
+            "b": "def",
+            "c": "void",
+            "d": "function"
+        },
+        "7":{
+            "a": "typedef",
+            "b": "type",
+            "c": "typeof",
+            "d": "find"
+        },
+        "8":{
+            "a": "func",
+            "b": "def",
+            "c": "void",
+            "d": "function"
+        },
+        "9":{
+            "a": "typedef",
+            "b": "type",
+            "c": "typeof",
+            "d": "find"
+        },
+        "10":{
+            "a": "func",
+            "b": "def",
+            "c": "void",
+            "d": "function"
+        }
+    },
+
+    {
+        "1": "ppp",
+        "2": "type", 
+        "3": "def",
+        "4": "print",
+        "5": "type",
+        "6": "def",
+        "7": "type",
+        "8": "def",
+        "9": "type",
+        "10": "def"
+    }
+
+]
