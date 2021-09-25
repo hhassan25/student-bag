@@ -174,7 +174,7 @@ class _HomePageState extends State<HomePage> {
                   onTap: () {
                     print("Tap Event");
                   },
-                  text: ["Our Schools", "In Iraq"],
+                  text: ["Some of our", "Schools in out", "nice country"],
                   textStyle: TextStyle(
                       fontSize: 30.0,
                       fontWeight: FontWeight.bold,
