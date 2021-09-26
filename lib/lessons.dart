@@ -112,14 +112,14 @@ class _LessonsState extends State<Lessons> {
                       ? StepState.complete
                       : StepState.disabled,
                 ),
-                Step(
+                /*Step(
                   title: new Text('Step 3'),
                   content: new Text('This is the third step.'),
                   isActive: _currentStep >= 0,
                   state: _currentStep >= 2
                       ? StepState.complete
                       : StepState.disabled,
-                ),
+                ),*/
               ],
             ),
           ),
