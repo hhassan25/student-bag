@@ -36,7 +36,6 @@ flutter:
   assets:
     - assets/
     - images/
-    - fonts/
 ```
 
 ## Dependencies
@@ -58,11 +57,11 @@ dependencies:
 
 ## In general
 ***
-Student-Bag is an app to give the student the ablility to hold his curriculum in his mobile phone. The student will be abel to see his lessons, make quizes, and take marks on his work.
+Student-Bag is an app to give the student the ablility to hold his curriculum in his mobile phone. The student will be able to see his lessons, make quizes, and take marks on his work.
 
 > For sure this app can be developed more in the future to make a teacher account, and a student account where the teacher will has a special interface to push the lessons, quizes, and notes to the students.
 
-## Here is some images from the app.
+## Here are some images from the app.
 ***
 
 ![](https://hadi.yallaproductionz.com/demo_edu_ira/screenshots/1.png)
