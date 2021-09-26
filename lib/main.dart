@@ -1,13 +1,11 @@
 import 'dart:convert';
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:demo_edu_ir/Exam_Folder/home.dart';
-import 'package:demo_edu_ir/test.dart';
 import 'package:flutter/services.dart';
 import 'package:http/http.dart' as http;
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:splashscreen/splashscreen.dart';
-
 import 'Home_Page.dart';
 
 void main() async {
@@ -16,7 +14,7 @@ void main() async {
   var username = preferences.getString('username');
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
-    home: username == null ? LoginPage() : homepage(),
+    home: username == null ? LoginPage() : HomePage(),
   ));
 }
 
@@ -39,16 +37,16 @@ class _MyHomePageState extends State<MyHomePage> {
       title: "Splash Screen Tutorial",
       home: Scaffold(
         body: SplashScreen(
-          seconds: 2,
-          navigateAfterSeconds: homepage(),
-          title: Text(
-            "Splash Screen Tutorial",
-          ),
+          seconds: 5,
+          navigateAfterSeconds: LoginPage(),
+          title: Text("Welcome",
+              style: TextStyle(color: Colors.redAccent, fontFamily: "Quando")),
           image: Image.asset("assets/logo.jpeg"),
           photoSize: 175,
           backgroundColor: Colors.white,
           loaderColor: Colors.red,
-          loadingText: Text("Getting Page Ready!"),
+          loadingText: Text("Getting Things Ready!",
+              style: TextStyle(fontFamily: "Quando")),
         ),
       ),
     );

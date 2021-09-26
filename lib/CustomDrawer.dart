@@ -106,7 +106,7 @@ class CustomDrawer extends StatelessWidget {
               Icons.notifications,
               color: Colors.white,
             ),
-            title: Text("Notifications", style: TextStyle(color: Colors.white)),
+            title: Text("Badges", style: TextStyle(color: Colors.white)),
           ),
           Divider(
             height: 1,

@@ -8,17 +8,18 @@ class getjson extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return FutureBuilder(
-      future: DefaultAssetBundle.of(context).loadString("assets/python.json"),
+      future: DefaultAssetBundle.of(context)
+          .loadString("assets/python-questions.json"),
       builder: (context, snapshot) {
-        List mydata = json.decode(snapshot.data.toString());
-        if (mydata == null) {
+        List questions = json.decode(snapshot.data.toString());
+        if (questions == null) {
           return Scaffold(
             body: Center(
               child: Text("Loading..."),
             ),
           );
         } else {
-          return quizpage(mydata: mydata);
+          return quizpage(questions: questions);
         }
       },
     );
@@ -26,16 +27,16 @@ class getjson extends StatelessWidget {
 }
 
 class quizpage extends StatefulWidget {
-  var mydata;
-  quizpage({Key key, @required this.mydata}) : super(key: key);
+  var questions;
+  quizpage({Key key, @required this.questions}) : super(key: key);
 
   @override
-  _quizpageState createState() => _quizpageState(mydata);
+  _quizpageState createState() => _quizpageState(questions);
 }
 
 class _quizpageState extends State<quizpage> {
-  var mydata;
-  _quizpageState(this.mydata);
+  var questions;
+  _quizpageState(this.questions);
 
   Color colortoshow = Colors.indigoAccent;
   Color right = Colors.green;
@@ -97,7 +98,7 @@ class _quizpageState extends State<quizpage> {
   }
 
   void checkanswer(String k) {
-    if (mydata[2][i.toString()] == mydata[1][i.toString()][k]) {
+    if (questions[2][i.toString()] == questions[1][i.toString()][k]) {
       marks = marks + 5;
       colortoshow = right;
     } else {
@@ -120,7 +121,7 @@ class _quizpageState extends State<quizpage> {
       child: MaterialButton(
         onPressed: () => checkanswer(k),
         child: Text(
-          mydata[1][i.toString()][k],
+          questions[1][i.toString()][k],
           style: TextStyle(
             color: Colors.white,
             fontFamily: "Alike",
@@ -149,13 +150,17 @@ class _quizpageState extends State<quizpage> {
             context: context,
             builder: (context) => AlertDialog(
                   title: Text("Exam"),
-                  content: Text("you can't go back at this stage."),
+                  content: Text(
+                      "you can't go back before finalizing the exam, good luck"),
                   actions: <Widget>[
                     FlatButton(
                       onPressed: () {
                         Navigator.of(context).pop();
                       },
-                      child: Text('Ok'),
+                      child: Text(
+                        'Ok',
+                        style: TextStyle(color: Colors.redAccent),
+                      ),
                     )
                   ],
                 ));
@@ -169,7 +174,7 @@ class _quizpageState extends State<quizpage> {
                 padding: EdgeInsets.all(15.0),
                 alignment: Alignment.bottomLeft,
                 child: Text(
-                  mydata[0][i.toString()],
+                  questions[0][i.toString()],
                   style: TextStyle(fontSize: 16.0, fontFamily: "Quando"),
                 ),
               ),

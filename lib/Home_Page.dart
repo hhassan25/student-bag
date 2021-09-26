@@ -148,21 +148,25 @@ class _HomePageState extends State<HomePage> {
                         style: TextStyle(
                             color: Colors.white,
                             fontSize: 18,
+                            fontFamily: "Quando",
                             fontWeight: FontWeight.bold)),
                     Text("$finalDate",
                         style: TextStyle(
                             color: Colors.white,
                             fontSize: 30,
+                            fontFamily: "Quando",
                             fontWeight: FontWeight.bold)),
                     Text("Hour:",
                         style: TextStyle(
                             color: Colors.white,
                             fontSize: 18,
+                            fontFamily: "Quando",
                             fontWeight: FontWeight.bold)),
                     Text("$finalTime",
                         style: TextStyle(
                             color: Colors.white,
                             fontSize: 30,
+                            fontFamily: "Quando",
                             fontWeight: FontWeight.bold)),
                   ],
                 ),
@@ -177,6 +181,7 @@ class _HomePageState extends State<HomePage> {
                   text: ["Some of our", "Schools in out", "nice country"],
                   textStyle: TextStyle(
                       fontSize: 30.0,
+                      fontFamily: "Satisfy",
                       fontWeight: FontWeight.bold,
                       color: Colors.redAccent),
                   textAlign: TextAlign.center,
