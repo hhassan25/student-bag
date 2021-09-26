@@ -2,7 +2,7 @@
 The best choice for a student.
 
 ## Features
-***
+
 * Created using flutter(dart), it can work on both android and IOS.
 * Nice styles using font-families like (Quando, Satsify..).
 * Include backend files in the lib folder (php-files).
@@ -12,7 +12,7 @@ The best choice for a student.
 * Worked on shared-preferences to keep user logged in after closing the app.
 
 ## Requirements
-***
+
 In order to be able to user font families like "Quando", "Alike", and "Satisfy", you have to donwload them as .ttf, put them inside the application, and add the fonts to the pubspec.yaml file under the `uses-material-design: true` line
 ```dart
 fonts:
@@ -39,7 +39,7 @@ flutter:
 ```
 
 ## Dependencies
-***
+
 Inside the pubspec.yaml file, be sure to add the following dependencies:
 ```dart
 dependencies:
@@ -56,13 +56,13 @@ dependencies:
   ```
 
 ## In general
-***
+
 Student-Bag is an app to give the student the ablility to hold his curriculum in his mobile phone. The student will be able to see his lessons, make quizes, and take marks on his work.
 
 > For sure this app can be developed more in the future to make a teacher account, and a student account where the teacher will has a special interface to push the lessons, quizes, and notes to the students.
 
 ## Here are some images from the app.
-***
+
 
 ![](https://hadi.yallaproductionz.com/demo_edu_ira/screenshots/1.png)
 
