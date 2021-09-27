@@ -27,7 +27,7 @@ class _splashscreenState extends State<splashscreen> {
     return Scaffold(
         backgroundColor: Colors.indigo,
         body: Center(
-          child: Text("quiz",
+          child: Text("Exams",
               style: TextStyle(
                   fontSize: 50, color: Colors.white, fontFamily: "Satisfy")),
         ));

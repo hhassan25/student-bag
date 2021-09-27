@@ -139,7 +139,7 @@ class _HomePageState extends State<HomePage> {
                     borderRadius: BorderRadius.all(Radius.circular(20)),
                     color: Colors.blue,
                     boxShadow: [
-                      BoxShadow(color: Colors.redAccent, blurRadius: 10)
+                      BoxShadow(color: Colors.redAccent, blurRadius: 30)
                     ]),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
@@ -178,14 +178,17 @@ class _HomePageState extends State<HomePage> {
                   onTap: () {
                     print("Tap Event");
                   },
-                  text: ["Some of our", "Schools in out", "nice country"],
+                  text: ["Some of", "Schools in our", "nice country"],
                   textStyle: TextStyle(
                       fontSize: 30.0,
-                      fontFamily: "Satisfy",
+                      fontFamily: "Quando",
                       fontWeight: FontWeight.bold,
                       color: Colors.redAccent),
                   textAlign: TextAlign.center,
                   alignment: AlignmentDirectional.center),
+              SizedBox(
+                height: 20,
+              ),
               Container(
                 width: MediaQuery.of(context).size.width,
                 height: 200,

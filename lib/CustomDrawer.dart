@@ -1,4 +1,5 @@
 import 'package:demo_edu_ir/Exam_Folder/Exams.dart';
+import 'package:demo_edu_ir/all-lessons-page.dart';
 import 'package:demo_edu_ir/calculator.dart';
 import 'package:demo_edu_ir/lessons.dart';
 import 'package:demo_edu_ir/main.dart';
@@ -55,8 +56,10 @@ class CustomDrawer extends StatelessWidget {
             ),
             onTap: () {
               Navigator.pop(context);
-              Navigator.push(context,
-                  new MaterialPageRoute(builder: (context) => new Lessons()));
+              Navigator.push(
+                  context,
+                  new MaterialPageRoute(
+                      builder: (context) => new allLessons()));
             },
           ),
           Divider(

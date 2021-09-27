@@ -136,7 +136,7 @@ class CustomDialog extends StatelessWidget {
   }
 
   _launchUrlCall() async {
-    const Tel = "tel:";
+    const Tel = "tel:0096170447725";
 
     if (await canLaunch(Tel)) {
       await launch(Tel);
@@ -146,7 +146,7 @@ class CustomDialog extends StatelessWidget {
   }
 
   _launchUrlEmail() async {
-    const Email = "mailto:edapps.contact@gmail.com";
+    const Email = "mailto:hadi.25.10.1994@gmail.com";
 
     if (await canLaunch(Email)) {
       await launch(Email);

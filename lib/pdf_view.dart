@@ -21,7 +21,7 @@ class _pdfViewState extends State<pdfView> {
 
   loadDocument() async {
     document = await PDFDocument.fromURL(
-        'https://hadi.yallaproductionz.com/demo_edu_ira/file.pdf');
+        'https://www.brianheinold.net/python/A_Practical_Introduction_to_Python_Programming_Heinold.pdf');
     setState(() => _isLoading = false);
   }
 

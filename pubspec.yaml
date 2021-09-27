@@ -32,6 +32,8 @@ dependencies:
   url_launcher: 
   flutter_session:
   shared_preferences:
+  webview_flutter: 1.0.1
+  flutter_webview_plugin:
   flutter:
     sdk: flutter
 

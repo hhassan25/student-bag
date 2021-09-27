@@ -129,7 +129,7 @@ class _LoginPageState extends State<LoginPage> {
                       ),
                     ),
                     onPressed: () {
-                      Navigator.pop(context);
+                      Navigator.of(context, rootNavigator: true).pop();
                     },
                   )
                 ],
@@ -215,7 +215,7 @@ class _LoginPageState extends State<LoginPage> {
                       ),
                     ),
                     onPressed: () {
-                      Navigator.pop(context);
+                      Navigator.of(context, rootNavigator: true).pop();
                     },
                   )
                 ],
@@ -272,6 +272,7 @@ class _LoginPageState extends State<LoginPage> {
         resizeToAvoidBottomInset: true,
         body: Center(
           child: Container(
+            color: Colors.white,
             padding: EdgeInsets.zero,
             child: ListView(
               scrollDirection: Axis.vertical,
@@ -328,13 +329,7 @@ class _LoginPageState extends State<LoginPage> {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: <Widget>[
                     SizedBox(
-                      height: 30,
-                    ),
-                    SizedBox(
-                      height: 20,
-                    ),
-                    SizedBox(
-                      height: 20,
+                      height: 50,
                     ),
                     Container(
                       width: MediaQuery.of(context).size.width - 30,
@@ -421,7 +416,7 @@ class _LoginPageState extends State<LoginPage> {
                         onPressed: () {
                           login();
                         }),
-                    SizedBox(height: 60),
+                    SizedBox(height: 20),
                     SizedBox(
                       width: MediaQuery.of(context).size.width,
                       child: TyperAnimatedTextKit(
@@ -435,11 +430,21 @@ class _LoginPageState extends State<LoginPage> {
                             "To Start",
                           ],
                           textStyle: TextStyle(
-                              fontSize: 30.0,
+                              fontSize: 15.0,
                               fontFamily: "Bobbers",
                               color: Colors.redAccent),
                           textAlign: TextAlign.center,
                           alignment: AlignmentDirectional.center),
+                    ),
+                    SizedBox(height: 20),
+                    Container(
+                      width: 200,
+                      height: 200,
+                      child: ClipOval(
+                          child: Image(
+                        image: AssetImage("assets/logo.jpeg"),
+                        fit: BoxFit.contain,
+                      )),
                     ),
                   ],
                 ),
